@@ -6,6 +6,7 @@ import Home from "./Home";
 import About from './About';
 import Contact from "./Conatct";
 import Service from "./Service";
+import Login from "./Login";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -19,6 +20,7 @@ const Appp = () => {
                 <Route exact path={'/about'} component={About}/>
                 <Route exact path={'/service'} component={Service}/>
                 <Route exact path={'/contact'} component={Contact}/>
+                <Route exact path={'/login'} component={Login}/>
                 <Redirect to={'/'}/>
             </Switch>
             <Footer/>

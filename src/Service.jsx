@@ -2,6 +2,7 @@ import React from "react";
 import Card from "./Card";
 import Sdata from "./Sdata";
 
+
 const Service = () => {
     return (
         <>
@@ -17,7 +18,8 @@ const Service = () => {
                                     <Card
                                         title={val.title}
                                         imgsrc={val.imgsrc}
-                                        defination={val.defination}
+                                        name={val.name}
+                                        // visit={val.visit}
                                         key={index}
                                     />
                                 )
