@@ -1,7 +1,6 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
-import NotificationsActiveIcon from '@material-ui/icons/NotificationsActive';
-import Button from '@material-ui/core/Button';
+
 
 
 const Navbar = () => {
@@ -22,10 +21,6 @@ const Navbar = () => {
                             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul className="navbar-nav ml-auto">
 
-                                    <Button variant="outlined">
-                                        <NotificationsActiveIcon/>
-                                    </Button>
-
                                     <li className="nav-item active">
                                         <NavLink activeClassName={'menu_active'} exact className="nav-link"
                                                  to={'/'}>Home <span className="sr-only">(current)</span></NavLink>
@@ -43,6 +38,11 @@ const Navbar = () => {
                                     <li className="nav-item">
                                         <NavLink activeClassName={'menu_active'} className="nav-link"
                                                  to={'/Login'}>Login</NavLink>
+                                    </li>
+
+                                    <li className="nav-item">
+                                        <NavLink activeClassName={'menu_active'} className="nav-link"
+                                                 to={'/note'}>Note</NavLink>
                                     </li>
 
                                     <li className="nav-item">
