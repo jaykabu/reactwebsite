@@ -9,7 +9,9 @@ import Service from "./Service";
 import Login from "./Login";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Note from "./Note";
+import Forget from "./Forget";
+import Fpassword from "./Fpassword";
+// import Note from "./AddNote";
 
 
 const Appp = () => {
@@ -21,8 +23,11 @@ const Appp = () => {
                 <Route exact path={'/service'} component={Service}/>
                 <Route exact path={'/about'} component={About}/>
                 <Route exact path={'/login'} component={Login}/>
-                <Route exact path={'/note'} component={Note} />
+                {/*<Route exact path={'/note'} component={Note} />*/}
                 <Route exact path={'/contact'} component={Contact}/>
+                <Route exact path={'/forget'} component={Forget}/>
+                <Route exact path={'/visit'}/>
+                <Route exact path={'/fpassword'} component={Fpassword}/>
                 <Redirect to={'/'}/>
             </Switch>
             <Footer/>
