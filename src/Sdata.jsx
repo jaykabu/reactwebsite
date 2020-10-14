@@ -2,7 +2,7 @@ import reactimg from './images/React.png';
 import jsimg from './images/javascript.png';
 import software from './images/software.png';
 import digital from './images/digital.png';
-import android from './images/android.png';
+import android from './images/Android-Development-Recycler-View-Night-Laptop-840x473.jpg'
 import wdesign from './images/wdesign.jpg';
 
 const Sdata = [
@@ -10,7 +10,7 @@ const Sdata = [
         imgsrc: reactimg,
         title: "React development",
         name:'ReactJs',
-       // visit:'https://reactjs.org/'
+        // visit:'https://reactjs.org/'
     },
     {
         imgsrc: jsimg,
