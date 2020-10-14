@@ -188,7 +188,6 @@ footer p {
 }
 
 
-
 //===================================== Login ===========================================//
 
 @font-face {
@@ -244,11 +243,11 @@ p {
   font-size: 14px;
   line-height: 1.7;
   color: #666666;
-  margin: 0px;
+  margin: 0;
 }
 
 ul, li {
-  margin: 0px;
+  margin: 0;
   list-style-type: none;
 }
 
@@ -471,7 +470,7 @@ iframe {
   width: 100%;
   position: absolute;
   top: 6px;
-  left: 0px;
+  left: 0;
   padding-left: 5px;
 
   -webkit-transition: all 0.4s;
@@ -669,7 +668,7 @@ iframe {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  right: 0px;
+  right: 0;
   pointer-events: none;
 
   font-family: Poppins-Regular;
@@ -714,4 +713,17 @@ iframe {
     visibility: visible;
     opacity: 1;
   }
+}
+
+.form-gap {
+  padding-top: 70px;
+}
+
+.fpass {
+  text-align: center;
+}
+
+.fpass h1 {
+  margin-top: 15%;
+  margin-bottom: 25%;
 }

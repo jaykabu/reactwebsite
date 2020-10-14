@@ -68,7 +68,7 @@ const Login = () => {
                             </div>
 
                             <div className="text-center p-t-90">
-                                <NavLink className="txt1" to={''}>
+                                <NavLink className="txt1" to={'/forget'}>
                                     Forgot Password?
                                 </NavLink>
                             </div>
