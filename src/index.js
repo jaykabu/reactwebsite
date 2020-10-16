@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.scss';
 import Appp from './Appp';
-import {BrowserRouter} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
     <>
         <BrowserRouter>
-            <Appp/>
+            <Appp />
         </BrowserRouter>
     </>,
     document.getElementById('root')

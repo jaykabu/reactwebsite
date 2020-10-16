@@ -1,5 +1,7 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
+import logo from './images/logo.jpg'
+
 
 const Login = () => {
 
@@ -33,7 +35,7 @@ const Login = () => {
                     <div className="wrap-login100">
                         <form className="login100-form validate-form" onClick={inputSubmit}>
 					<span className="login100-form-logo">
-						{/*<i className="zmdi zmdi-landscape"></i>*/}
+                        <i className="zmdi zmdi-landscape" ></i>
 					</span>
 
                             <span className="login100-form-title p-b-34 p-t-27">
@@ -41,13 +43,13 @@ const Login = () => {
 					</span>
 
                             <div className="wrap-input100 validate-input" data-validate="Enter username">
-                                <input className="input100" type="email" name="email" placeholder="Email"
+                                <input className="input100" type="email"  placeholder="Email"
                                        autoComplete={'off'} name={'email'} value={value.email} onChange={inputEvent}/>
                                 {/*<span className="focus-input100" data-placeholder="&#xf207;"></span>*/}
                             </div>
 
                             <div className="wrap-input100 validate-input" data-validate="Enter password">
-                                <input className="input100" type="password" name="pass" placeholder="Password"
+                                <input className="input100" type="password"  placeholder="Password"
                                        name={'password'} value={value.password} onChange={inputEvent}
                                 />
                                 {/*<span className="focus-input100" data-placeholder="&#xf191;"></span>*/}
@@ -71,6 +73,8 @@ const Login = () => {
                                 <NavLink className="txt1" to={'/forget'}>
                                     Forgot Password?
                                 </NavLink>
+
+
                             </div>
                         </form>
                     </div>

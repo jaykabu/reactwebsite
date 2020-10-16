@@ -188,6 +188,38 @@ footer p {
 }
 
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+//                                               NOTEPAD
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.todo_style{
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  align-content: center;
+  font-family: 'Raleway', sans-serif;
+}
+.todo_style .fa-times {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #8566aa;
+  border-radius: 50%;
+  margin: 0 15px 0 35px;
+  color: aliceblue;
+  box-shadow: 5px 5px 15px -5px  rgba(0,0,0, 0.3);
+}
+
+.todo_style .fa-times:hover{
+  background-color: crimson;
+}
+
+
+
+
 //===================================== Login ===========================================//
 
 @font-face {
@@ -383,6 +415,9 @@ iframe {
   font-size: 60px;
   color: #333333;
 
+  background-image: url("images/logo.jpg");
+
+
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -394,8 +429,11 @@ iframe {
   height: 120px;
   border-radius: 50%;
   background-color: #fff;
-  margin: 0 auto;
+  margin: 15px auto;
+
 }
+
+
 
 .login100-form-title {
   font-family: Poppins-Medium;
@@ -727,3 +765,41 @@ iframe {
   margin-top: 15%;
   margin-bottom: 25%;
 }
+
+.Ndiv{
+  margin-top: 25px;
+  margin-bottom: 35%;
+}
+.note_div {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-family: 'Raleway', sans-serif;
+}
+.nbtn-button{
+  size: 10px;
+}
+.abc{
+  display: inline-block;
+  margin: 20px;
+
+}
+.card-body {
+  padding: 50px;
+  margin: 20px;
+  border: 2px solid black;
+  //padding: 10px;
+  border-radius: 25px;
+  box-shadow: 10px 10px 5px grey;
+
+  //animation-name: example;
+  //animation-duration: 4s;
+  //animation-delay: 2s;
+}
+//@keyframes example {
+//  0%   {background-color:red; left:0px; top:0px;}
+//  25%  {background-color:yellow; left:200px; top:0px;}
+//  50%  {background-color:blue; left:200px; top:200px;}
+//  75%  {background-color:green; left:0px; top:200px;}
+//  100% {background-color:red; left:0px; top:0px;}
+//}
