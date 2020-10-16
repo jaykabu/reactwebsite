@@ -1930,7 +1930,7 @@ var modifiers = {
    * The latter is a deprecated method because it leads to confusion and will be
    * removed in v2.<br />
    * Additionally, it accepts additions and subtractions between different units.
-   * Note that multiplications and divisions aren't supported.
+   * AddNote that multiplications and divisions aren't supported.
    *
    * Valid examples are:
    * ```
@@ -2124,7 +2124,7 @@ var modifiers = {
    * Computes the style that will be applied to the popper element to gets
    * properly positioned.
    *
-   * Note that this modifier will not touch the DOM, it just prepares the styles
+   * AddNote that this modifier will not touch the DOM, it just prepares the styles
    * so that `applyStyle` modifier can apply it. This separation is useful
    * in case you need to replace `applyStyle` with a custom implementation.
    *
@@ -2169,7 +2169,7 @@ var modifiers = {
    * you want to integrate Popper.js inside a framework or view library and you
    * want to delegate all the DOM manipulations to it.
    *
-   * Note that if you disable this modifier, you must make sure the popper element
+   * AddNote that if you disable this modifier, you must make sure the popper element
    * has its position set to `absolute` before Popper.js can do its work!
    *
    * Just disable this modifier and define you own to achieve the desired effect.
