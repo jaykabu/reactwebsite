@@ -1,7 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 
 const Forget = () => {
+
+
+    const [eml , setEml] = useState();
+
+
+    const inputEvent = (event)=>{
+        setEml(event.target.value);
+    }
+
+
     return (
         <>
             <div className="form-gap">
@@ -15,24 +25,23 @@ const Forget = () => {
                                         <h2 className="text-center">Forgot Password?</h2>
                                         <p>You can reset your password here.</p>
                                         <div className="panel-body">
-
                                             <form id="register-form" role="form" autoComplete="off" className="form">
-
                                                 <div className="form-group">
                                                     <div className="input-group">
                                                     <span className="input-group-addon">
                                                         <i className="glyphicon glyphicon-envelope color-blue"></i>
                                                     </span>
-                                                        <input id="email" name="email" placeholder="email address"
-                                                               className="form-control" type="email"/>
+                                                        <input type={"email"}  placeholder="email address"
+                                                               className="form-control"
+                                                               name={"email"} value={eml} onChange={inputEvent}
+                                                        />
                                                     </div>
                                                 </div>
                                                 <div className="form-group">
                                                     <NavLink className="btn btn-lg btn-primary btn-block"
                                                              to={'/fpassword'}> Reset Password </NavLink>
                                                 </div>
-
-                                                <input type="hidden" className="hide" name="token" id="token" value=""/>
+                                                {/*<input type="hidden" className="hide" name="token" id="token" value=""/>*/}
                                             </form>
                                         </div>
                                     </div>
