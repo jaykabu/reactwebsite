@@ -10,7 +10,7 @@ const Card = (props) => {
                     <div className="card-body">
                         <h5 className="card-title font-weight-bold">{props.title}</h5>
                         <p className="card-text">{props.name}</p>
-                        <NavLink  className="btn btn-primary" to={''}>Learn Course</NavLink>
+                        <NavLink  className="btn btn-primary" to={'/visit'}>Learn Course</NavLink>
                     </div>
                 </div>
             </div>
