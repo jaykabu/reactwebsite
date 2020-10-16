@@ -11,8 +11,8 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Forget from "./Forget";
 import Fpassword from "./Fpassword";
-// import Note from "./AddNote";
-
+import Note from "./Note";
+import Anotepad from "./Anotepad";
 
 const Appp = () => {
     return (
@@ -23,7 +23,8 @@ const Appp = () => {
                 <Route exact path={'/service'} component={Service}/>
                 <Route exact path={'/about'} component={About}/>
                 <Route exact path={'/login'} component={Login}/>
-                {/*<Route exact path={'/note'} component={Note} />*/}
+                <Route exact path={'/note'} component={Note} />
+                <Route exact path={'/anotepad'} component={Anotepad} />
                 <Route exact path={'/contact'} component={Contact}/>
                 <Route exact path={'/forget'} component={Forget}/>
                 <Route exact path={'/visit'}/>
