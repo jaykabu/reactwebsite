@@ -6,9 +6,15 @@ const Footer = () => {
 
     return (
         <>
-            <footer className={'w-100 bg-light text-center'}>
-            <p> {date} JayKabutarwala. All Right Reserved | Terms And Conditions </p>
-            </footer>
+            <div className={"container-fluid nav_bg"}>
+                <div className={'row'}>
+                    <div className={'col-10 mx-auto'}>
+                        <footer className={'w-100 bg-light text-center'}>
+                            <p> {date} JayKabutarwala. All Right Reserved | Terms And Conditions </p>
+                        </footer>
+                    </div>
+                </div>
+            </div>
         </>
     )
 };
