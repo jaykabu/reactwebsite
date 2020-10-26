@@ -13,6 +13,9 @@ import Forget from "./Forget";
 import Fpassword from "./Fpassword";
 import Note from "./Note";
 import Anotepad from "./Anotepad";
+import Signup from "./Signup";
+
+
 
 const Appp = () => {
     return (
@@ -29,6 +32,7 @@ const Appp = () => {
                 <Route exact path={'/forget'} component={Forget}/>
                 <Route exact path={'/visit'}/>
                 <Route exact path={'/fpassword'} component={Fpassword}/>
+                <Route exact  path={'/signup'} component={Signup} />
                 <Redirect to={'/'}/>
             </Switch>
             <Footer/>

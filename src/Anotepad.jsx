@@ -3,6 +3,7 @@ import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
 import TextField from "@material-ui/core/TextField";
 import AToDoList from "./AToDoList";
+// import Clock from 'react-digital-clock';
 
 const Anotepad = () => {
 
@@ -42,34 +43,37 @@ const Anotepad = () => {
             })
         })
     }
-    const expandIt = ()=>{
+    const expandIt = () => {
         setExpand(true);
     }
 
-    const bToNormal = ()=>{
+    const bToNormal = () => {
         setExpand(false)
     }
 
     return (
         <>
+            {/*<div className={'clock col-1 mx-auto row'}>*/}
+            {/*    <Clock />*/}
+            {/*</div>*/}
             <div className={"container-fluid nav_bg Ndiv"}>
                 <div className={"row"}>
                     <div className={"col-10 mx-auto"}>
                         <div style={{textAlign: "center"}}>
 
                             <div className={"note_div"}>
-                            <h3>Advance NotePad</h3>
+                                <h3>Advance NotePad</h3>
                             </div>
 
                             {expand ?
-                            <TextField
-                                label={"Enter a Title"}
-                                type={"text"}
-                                name={"title"}
-                                onChange={inputEvent}
-                                value={inputList.title}
-                                autoComplete={'off'}
-                            />:null}
+                                <TextField
+                                    label={"Enter a Title"}
+                                    type={"text"}
+                                    name={"title"}
+                                    onChange={inputEvent}
+                                    value={inputList.title}
+                                    autoComplete={'off'}
+                                /> : null}
                             <br/>
                             <TextField
                                 id="standard-multiline-flexible"
